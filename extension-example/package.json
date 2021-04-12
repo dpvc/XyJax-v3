@@ -1,0 +1,25 @@
+{
+  "name": "example-extension",
+  "version": "1.0.0",
+  "description": "Example of extension that defines an MmlNode and output wrappers for it",
+  "license": "Apache-2.0",
+  "keywords": [
+    "MathJax",
+    "extension"
+  ],
+  "scripts": {
+    "compile": "cd components/example && ../bin/pack"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "terser-webpack-plugin": "^5.0.3",
+    "webpack": "^5.3.2",
+    "webpack-cli": "^4.1.0"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "mathjax-full": "^3.1.2"
+  }
+}

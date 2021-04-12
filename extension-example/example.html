@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta charset="utf-8"/>
+<title>Add node and mml factory items</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+MathJax = {
+  options: {
+    compileError(doc, math, err) {throw err},
+    typesetError(doc, math, err) {throw err}
+  },
+  tex: {
+    packages: {'[+]': ['test']}
+  },
+  loader: {
+    load: ['[example]/example'],
+    paths: {example: './es5'}
+  }
+}
+</script>
+<script id="MathJax-script" src="./node_modules/mathjax-full/es5/tex-svg.js"></script>
+</head>
+<body>
+
+\[\test{x+1}\]
+
+</body>
+</html>
